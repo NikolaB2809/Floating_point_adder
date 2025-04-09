@@ -11,7 +11,7 @@ cd Floating_point_adder
 make FP_Adder
 ```
 You can test different modules by running different Make commands:
-- `make FP_Adder`
+- `make FP_Adder_top`
 - `make Adder_module`
 - `make Output_reg`
 - `make Setup_reg`
