@@ -10,10 +10,10 @@ Adder_module:
 	$(SIMULATOR) -o ./build/Adder_module_tb.vvp Adder_module_tb.v Adder_module.v
 	$(COMPILER) ./build/Adder_module_tb.vvp
 
-FP_Adder:
+FP_Adder_top:
 	mkdir -p $(BUILD_DIR)
-	$(SIMULATOR) -o ./build/FP_Adder_tb.vvp FP_Adder_tb.v FP_Adder.v
-	$(COMPILER) ./build/FP_Adder_tb.vvp
+	$(SIMULATOR) -o ./build/FP_Adder_top_tb.vvp FP_Adder_top_tb.v FP_Adder_top.v
+	$(COMPILER) ./build/FP_Adder_top_tb.vvp
 
 Output_reg:
 	mkdir -p $(BUILD_DIR)

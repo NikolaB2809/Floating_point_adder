@@ -1,4 +1,4 @@
-module FP_Adder_tb;
+module FP_Adder_top_tb;
 
 localparam WIDTH = 16;
 
@@ -22,7 +22,7 @@ integer passed_tests;
 integer i;
 reg [WIDTH-1:0] result;
 
-FP_Adder dut(
+FP_Adder_top dut(
     .serial1_in(serial1_in),
     .serial2_in(serial2_in),
     .serial3_in(serial3_in),
@@ -97,8 +97,8 @@ task check;
 endtask
 
 initial begin
-    $dumpfile("FP_Adder_tb.vcd");  // Specify VCD file name
-    $dumpvars(0, FP_Adder_tb);     // Dump all variables in the module
+    $dumpfile("FP_Adder_top_tb.vcd");  // Specify VCD file name
+    $dumpvars(0, FP_Adder_top_tb);     // Dump all variables in the module
     iterations = 0;
     passed_tests = 0;
     serial1_in <= 1'b0;

@@ -5,7 +5,7 @@
 `include "Shift_reg.v"
 `include "Delay_module.v"
 
-module FP_Adder(
+module FP_Adder_top(
     input serial1_in,
     input serial2_in,
     input serial3_in,
