@@ -32,5 +32,6 @@ Shift_reg:
 
 clean:
 	rm -rf $(BUILD_DIR)
+	rm -rf *.vcd
 
 .PHONY: clean
