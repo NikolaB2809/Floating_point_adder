@@ -30,6 +30,11 @@ Shift_reg:
 	$(SIMULATOR) -o ./build/Shift_reg_tb.vvp Shift_reg_tb.v Shift_reg.v
 	$(COMPILER) ./build/Shift_reg_tb.vvp
 
+Wrapper:
+	mkdir -p $(BUILD_DIR)
+	$(SIMULATOR) -o ./build/FP_Adder_wrapper_tb.vvp FP_Adder_wrapper_tb.v FP_Adder_wrapper.v
+	$(COMPILER) ./build/FP_Adder_wrapper_tb.vvp
+
 clean:
 	rm -rf $(BUILD_DIR)
 	rm -rf *.vcd
